@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Html 5 - Video Playlist</title>
+        <meta name="description" content="Html 5 - Video Playlist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <div class="alert container-narrow">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Warning!</strong> You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
+            </div>
+        <![endif]-->
+        <div class="container-narrow">
+            <div class="masthead">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="http://www.videolan.org/vlc/" target="_blank">Download VLC</a></li>
+                </ul>
+                <h3 class="muted">Html 5 - Video Playlist Demo</h3>
+            </div>
+            <div class="jumbotron">
+                <video id="videoarea" controls="controls" poster="" src="" lastvideo="false"></video>
+            </div>
+
+            <div class="row-fluid marketing">
+                <div class="span6">
+                    <h4>1. Playlist One</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo3.mp4" lastvideo="true">Video Three</li>
+                        </ul>
+                    </p>
+
+                    <h4>2. Playlist Two</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo3.mp4">Video Three</li>
+                            <li movieurl="DemoVideo3.mp4" lastvideo="true">Video Three</li>
+                        </ul>
+                    </p>
+
+                    <h4>3. Playlist Three</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4" lastvideo="true">Video One</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="span6">
+                    <h4>1. Playlist Four</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo3.mp4" lastvideo="true">Video Three</li>
+                        </ul>
+                    </p>
+
+                    <h4>2. Playlist Five</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo2.mp4">Video Two</li>
+                            <li movieurl="DemoVideo3.mp4">Video Three</li>
+                            <li movieurl="DemoVideo3.mp4" lastvideo="true">Video Three</li>
+                        </ul>
+                    </p>
+
+                    <h4>3. Playlist Six</h4>
+                    <p>
+                        <ul class="playlist">
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4">Video One</li>
+                            <li movieurl="DemoVideo1.mp4" lastvideo="true">Video One</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <p>&copy; example.com 2013</p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
