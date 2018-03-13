@@ -1,8 +1,4 @@
-html,
-button,
-input,
-select,
-textarea {
+html, button {
     color: #222;
 }
 
@@ -44,6 +40,8 @@ hr {
     height: 480px;
     border: 1px solid silver;
     object-fit: cover;
+    -webkit-transition: width 2s, height 2s; /* Safari */
+    transition: width 2s, height 2s;
 }
 
 .title {
@@ -54,19 +52,6 @@ hr {
     line-height: 40px;
     margin: 10px 0;
     text-rendering: optimizelegibility;
-}
-
-.VLCDownload {
-    color: rgb(51, 51, 51);
-    float: right;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 22.4px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    margin: 0 0 20px;
-    padding: 0;
 }
 
 .titleBlock {
@@ -83,7 +68,8 @@ hr {
     line-height: 22.4px;
     max-width: 650px;
     margin: 0 auto;
-    /*border: 1px black solid;*/
+    -webkit-transition: max-width 2s; /* Safari */
+    transition: max-width 2s;
 }
 
 .contentBlock > hr {
@@ -93,7 +79,6 @@ hr {
 .videoBlock {
     margin: 0 auto;
     display: block;
-    /*border: 1px red solid;*/
     text-align: center;
 }
 

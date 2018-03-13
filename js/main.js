@@ -26,21 +26,33 @@ function lnkChangeVideo(sender, pause) {
   ScrollToTop();
 }
 
+/**
+ * btn640x480 click handler
+ */
 function btn640x480_OnClick(){
   videoPlayer.SetSize("640px", "480px");
   setContentBlockWidth("650px");
 }
 
+/**
+ * btn720x480 click handler
+ */
 function btn720x480_OnClick(){
   videoPlayer.SetSize("720px", "480px");
   setContentBlockWidth("730px");
 }
 
+/**
+ * btn852x480 click handler
+ */
 function btn852x480_OnClick(){
   videoPlayer.SetSize("852px", "480px");
   setContentBlockWidth("862px");
 }
 
+/**
+ * btn800x600 click handler
+ */
 function btn800x600_OnClick(){
   videoPlayer.SetSize("800px", "600px");
   setContentBlockWidth("810px");
