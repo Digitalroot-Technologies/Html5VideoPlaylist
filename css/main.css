@@ -42,8 +42,8 @@ hr {
 #videoPlayer {
     width: 640px;
     height: 480px;
-    margin: 10px;
     border: 1px solid silver;
+    object-fit: cover;
 }
 
 .title {
@@ -81,8 +81,9 @@ hr {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 22.4px;
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
+    /*border: 1px black solid;*/
 }
 
 .contentBlock > hr {
@@ -90,7 +91,10 @@ hr {
 }
 
 .videoBlock {
-
+    margin: 0 auto;
+    display: block;
+    /*border: 1px red solid;*/
+    text-align: center;
 }
 
 .playlistBlock {
@@ -101,11 +105,13 @@ hr {
 
 .playlist {
     margin-top: -10px;
+    text-rendering: optimizelegibility;
 }
 
 .playlist > li {
     margin-top: -10px;
     margin-bottom: -15px;
+    text-rendering: optimizelegibility;
 }
 
 .footer {

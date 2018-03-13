@@ -94,4 +94,13 @@ function VideoPlayer() {
     player = self.GetElement();
     player.src = value;
   };
+
+  /**
+   * Set the video players default size
+   */
+  self.SetSize = function (w, h) {
+    player = self.GetElement();
+    player.style.width = w;
+    player.style.height = h;
+  }
 }

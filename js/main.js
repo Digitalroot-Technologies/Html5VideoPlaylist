@@ -26,6 +26,33 @@ function lnkChangeVideo(sender, pause) {
   ScrollToTop();
 }
 
+function btn640x480_OnClick(){
+  videoPlayer.SetSize("640px", "480px");
+  setContentBlockWidth("650px");
+}
+
+function btn720x480_OnClick(){
+  videoPlayer.SetSize("720px", "480px");
+  setContentBlockWidth("730px");
+}
+
+function btn852x480_OnClick(){
+  videoPlayer.SetSize("852px", "480px");
+  setContentBlockWidth("862px");
+}
+
+function btn800x600_OnClick(){
+  videoPlayer.SetSize("800px", "600px");
+  setContentBlockWidth("810px");
+}
+
+
+
+function setContentBlockWidth(value){
+  let elm = document.getElementsByClassName("contentBlock")[0];
+  elm.style.maxWidth = value;
+}
+
 /**
  * Video end handler
  */
