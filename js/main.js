@@ -29,7 +29,7 @@ function lnkChangeVideo(sender, pause) {
 /**
  * btn640x480 click handler
  */
-function btn640x480_OnClick(){
+function btn640x480_OnClick() {
   videoPlayer.SetSize("640px", "480px");
   setContentBlockWidth("650px");
 }
@@ -37,7 +37,7 @@ function btn640x480_OnClick(){
 /**
  * btn720x480 click handler
  */
-function btn720x480_OnClick(){
+function btn720x480_OnClick() {
   videoPlayer.SetSize("720px", "480px");
   setContentBlockWidth("730px");
 }
@@ -45,7 +45,7 @@ function btn720x480_OnClick(){
 /**
  * btn852x480 click handler
  */
-function btn852x480_OnClick(){
+function btn852x480_OnClick() {
   videoPlayer.SetSize("852px", "480px");
   setContentBlockWidth("862px");
 }
@@ -53,14 +53,12 @@ function btn852x480_OnClick(){
 /**
  * btn800x600 click handler
  */
-function btn800x600_OnClick(){
+function btn800x600_OnClick() {
   videoPlayer.SetSize("800px", "600px");
   setContentBlockWidth("810px");
 }
 
-
-
-function setContentBlockWidth(value){
+function setContentBlockWidth(value) {
   let elm = document.getElementsByClassName("contentBlock")[0];
   elm.style.maxWidth = value;
 }
@@ -68,8 +66,8 @@ function setContentBlockWidth(value){
 /**
  * Video end handler
  */
-function OnVideoEnd(){
-  if(lastVideo.getAttribute("lastvideo")) {
+function OnVideoEnd() {
+  if (lastVideo.getAttribute("lastvideo")) {
     console.log("End of playlist.");
     return;
   }
@@ -90,8 +88,7 @@ function SetPlaying(elm) {
  */
 function ClearPlaying() {
   let playing = document.getElementsByClassName("playing");
-  if(playing.length > 0)
-  {
+  if (playing.length > 0) {
     playing[0].classList.remove("playing");
   }
 }
@@ -105,6 +102,6 @@ function ScrollToTop() {
   let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentScroll > 0) {
     window.requestAnimationFrame(ScrollToTop);
-    window.scrollTo (0,currentScroll - (currentScroll/5));
+    window.scrollTo(0, currentScroll - (currentScroll / 5));
   }
 }

@@ -62,12 +62,10 @@ function VideoPlayer() {
    */
   self.Rewind = function () {
     player = self.GetElement();
-    if(player.currentTime - 5 < 0)
-    {
+    if (player.currentTime - 5 < 0) {
       player.currentTime = 0;
     }
-    else
-    {
+    else {
       player.currentTime -= 5;
     }
   };
@@ -77,12 +75,10 @@ function VideoPlayer() {
    */
   self.Skip = function () {
     player = self.GetElement();
-    if(player.currentTime + 5 > player.duration)
-    {
+    if (player.currentTime + 5 > player.duration) {
       player.currentTime = player.duration;
     }
-    else
-    {
+    else {
       player.currentTime += 5;
     }
   };
